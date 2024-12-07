@@ -17,7 +17,7 @@ onMounted(async ()=>{
     <HistoryTable :historydb="db" />
   </div>
 </template>
-<style>
+<style >
 
 
 #main-box{
@@ -26,23 +26,6 @@ onMounted(async ()=>{
     align-items: center;
     flex-direction: column
 }
-body{
-  
-    
-    background-image: url("bg.png");
-    /* background-blend-mode: hard-light; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    color: whitesmoke;
-    font-family: "JetBrains Mono", monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column
 
-    
-}
 
 </style>
