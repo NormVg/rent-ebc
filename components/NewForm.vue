@@ -171,6 +171,14 @@ const submitForm = async () => {
   padding-bottom: 10px;
   gap: 10px;
 }
+
+
+@media only screen and (max-width: 480px){
+    #form-box{
+        
+        width: 90vw;
+    }
+  }
 </style>
 
 
