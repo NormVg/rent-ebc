@@ -98,6 +98,7 @@ const submitForm = async () => {
     } catch (error) {
       response.value = { success: false, message: error.message };
     }
+    await logger("added a new record ", formData.value)
     console.log(bill);
   } else {
    
@@ -121,8 +122,8 @@ const submitForm = async () => {
     };
 
     console.log(formData.value,"+as=as=das=d=a")
-
     try {
+      await logger("updated doc from",dataTable.value)
       const { data } = await useFetch("/api/update?seq="+formData.value.seq, {
         method: "POST",
         body: formData.value,
@@ -132,7 +133,6 @@ const submitForm = async () => {
     } catch (error) {
       response.value = { success: false, message: error.message };
     }
-
     
     
   }
@@ -141,6 +141,7 @@ const submitForm = async () => {
   SlaveMeter.value = null;
   MainMeterBill.value = null;
   await props.updateDB();
+  await logger("updated doc to ",dataTable.value)
 };
 </script>
 

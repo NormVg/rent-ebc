@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     
     const body = await readBody(event)
     const added = new BillSchema(body).save()
-    new logSchema({title:"added new record",log:body}).save()
+    
     return added
    
   } catch (error) {
