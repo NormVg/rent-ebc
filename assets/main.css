@@ -16,3 +16,34 @@ body{
     
 }
 
+@media only screen and (max-width: 480px){
+    #form-box{
+        
+        width: 90vw;
+    }
+
+    #tables{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: #00000052;
+        border: 1px whitesmoke solid;
+        border-radius: 15px;
+        width: 90vw;
+        padding: 10px;
+        
+        height: 60vh;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    
+        display: flex;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    #tables table{
+        padding-left: 110px;
+    }
+    #tables table td{
+        padding: 10px;
+     
+    }
+}
