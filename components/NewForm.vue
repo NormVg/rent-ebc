@@ -160,7 +160,7 @@ const submitForm = async () => {
   gap: 10px;
   width: 50vw;
 
-  background-color: #4b4b4b52;
+  background-color: #00000062;
   border: 1px whitesmoke solid;
   border-radius: 15px;
   width: 30vw;

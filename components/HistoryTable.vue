@@ -46,6 +46,7 @@ const db  = computed(()=>{
     <td class="ground">{{ tab["bill-ground"] }}</td>
     <td class="first">{{ tab["bill-first"] }}</td>
   </tr>
+  
 </tbody>
     </table>
   </div>
@@ -60,10 +61,10 @@ const db  = computed(()=>{
   
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: #4b4b4b52;
+    background-color: #00000062;
     border: 1px whitesmoke solid;
     border-radius: 15px;
-    width: 75vw;
+    width: 85vw;
     padding: 10px;
     
     height: 70vh;
@@ -73,7 +74,10 @@ const db  = computed(()=>{
     display: flex;
     justify-content:center;
     align-items: flex-start;
-    overflow: scroll
+    /* align-items: center; */
+    overflow: auto
+
+    
 }
 #tables table th{
     text-align: center;

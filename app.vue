@@ -28,9 +28,9 @@ onMounted(async ()=>{
 }
 body{
   
-    background-color: black;
+    
     background-image: url("bg.png");
-    background-blend-mode: hard-light;
+    /* background-blend-mode: hard-light; */
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
